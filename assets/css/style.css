@@ -97,6 +97,18 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Events */
+
+#events .table {
+    /* events table font size small enough that 
+      the table doesn't overflow on xs screens. 
+      Size set back to 1rem in a media query 
+      for sm screens and up */
+    font-size: 0.9rem;
+} 
+
+
+
 /* Game library cards */
 
 #new-games .card,
@@ -156,11 +168,19 @@ h2 {
 
 /* Small devices (mobile phones, 320px and up) */
 
-@media screen and (min-width: 320px) {
+/* Small screens and up */
+@media screen and (min-width: 576px) {
+    /* increase font size in events table when screen size is large enough */
+    #events .table {
+        font-size: 1rem;
+    }
+
     #student-discount > a {
-    padding: 5px auto;
+    padding: 5px 10px;
+    }
+    
 }
-}
+
 
 /* Medium devices (tablets, 768px and up) */
 
